@@ -1,0 +1,4 @@
+#!/bin/sh
+
+npm config rm proxy
+npm config rm https-proxy

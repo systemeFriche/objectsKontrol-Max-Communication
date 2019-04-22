@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Site ObjectsKontrol</title>
+    <link href="css/main_oK_osc.df5bcfbf3b379f08a4bf.css" rel="stylesheet"></head>
+
+<body>
+<div id="container" data-web-socket-server="192.168.0.14" data-web-socket-port="7474">
+    <div id="bouton1" class="knob" data-legende="Bouton 1" data-width="100" data-style-border="dashed 1px #444" data-couleur="0,255,0"
+         data-angle-depart="30" data-angle-arrivee="330" data-valeur-min="0.5" data-valeur-max="1.5" data-valeur-init="1" data-adresse-osc="/1/gain"
+         data-type-val="f">
+    </div>
+    <div id="bouton2" class="knob" data-legende="Bouton 2" data-width="100" data-style-border="dashed 1px #444" data-couleur="255,0,0"
+         data-angle-depart="30" data-angle-arrivee="330" data-valeur-min="-5" data-valeur-max="7" data-valeur-init="0" data-adresse-osc="/2/gain"
+         data-type-val="i">
+    </div>
+    <div id="toggle1" class="toggle" data-legende="Toggle 1" data-width="100" data-style-border="dashed 1px #444" data-couleur="0,0,255"
+         data-etat-init="0" data-adresse-osc="/1/effet1">
+    </div>
+    <div id="bang1" class="bang" data-legende="Bang 1" data-width="100" data-style-border="dashed 1px #444" data-couleur="255,255,0"
+         data-adresse-osc="/bang">
+    </div>
+    <div id="slider1" class="slider" data-legende="Slider 1" data-width="100" data-height="300" data-style-border="dashed 1px #444"
+         data-couleur="0,255,255" data-valeur-min="-80" data-valeur-max="6" data-valeur-init="0" data-adresse-osc="/3/gain" data-type-val="f">
+    </div>
+    <div id="slider2" class="slider" data-legende="Slider 2" data-width="100" data-height="300" data-style-border="dashed 1px #444" data-couleur="255,255,255"
+         data-valeur-min="0" data-valeur-max="10" data-valeur-init="5.3" data-adresse-osc="/4/gain" data-type-val="f">
+    </div>
+    <div id="led1" class="led" data-legende="Led 1" data-width="100" data-style-border="dashed 1px #444" data-couleur="255,0,0"
+         data-adresse-osc="/led1">
+    </div>
+    <div id="osc1" class="oscillator" height="100" data-type="sine", data-valeur-min-freq="20" data-valeur-max-freq= "5000"
+         data-frequency="440" data-valeur-min-ampl="0" data-valeur-max-ampl= "1" data-amplitude="1" data-adresse-osc="/osc1" data-type-val="f">
+    </div>
+    <div id="out1" class="out" data-width="100" data-height="100" data-style-border="dashed 1px #444" data-adresse-osc="/out" data-type-val="i">
+    </div>
+</div>
+<script type="text/javascript" src="js/main_oK_osc.d3a9f46c57f2dc049c08.bundle.js"></script></body>
+</html>
