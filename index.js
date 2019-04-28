@@ -5,6 +5,14 @@
 //                                    Max system for Max 7.
 // --------------------------------------------------------------------------
 
+// -----------------------------------------------------------------------------------
+// On récupère l'adresse IP du serveur avec qui on souhaite communiquer
+// -----------------------------------------------------------------------------------
+
+const args = process.argv;
+let remoteAdress = args[2] || "127.0.0.1";
+console.log("Remote adress : "+remoteAdress);
+
 
 // -----------------------------------------------------------------------------------
 // Gestion du serveur Web pour servir l'interface Web qui pilotera l'application MAX
@@ -97,7 +105,7 @@ wss.on("connection", function (ws) {
         localPort: 7400,
         //port écouté par MAX à préciser
         //on reste en local
-        remoteAddress: "127.0.0.1",
+        remoteAddress: remoteAdress,
         remotePort: 7500,
         metadata:true
     });
